@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Unidad 1 | Actividad 2</title>
+        
+   
+            <link rel="icon" type="image/xicon" href="favicon.ico/">
+                <meta charset="utf8"/> 
+                <meta name="Autor" content=" Braulio Martinez Salgado"/> 
+                <meta name="Fecha" content="Martes 11 de Febrero de 2025"/>
+                <meta name="Descripcion" content="Descripcion"/> 
+    
+        
+    </head>
+    
+    
+    <body>
+    <h1>Programacion web - 187134 Andrés Fernando García Delgado</h1>
+    <h1>Título No 1</h1>
+    <h2>Título No 2</h1>
+    <h3>Título No 3</h1>
+    <h4>Título No 4</h1>
+    <h5>Título No 5</h1>
+    <h6>Título No 6</h1>
+
+
+
+
+
+    </body>
+    
+    
+</html>
