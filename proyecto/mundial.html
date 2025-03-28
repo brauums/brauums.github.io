@@ -21,18 +21,23 @@
       background-repeat: no-repeat;
       color: white;
       font-family: "Encode Sans Condensed", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
-    h1, h2, h3 {
+    h1, h2 {
       font-family: "Rock Salt", cursive;
     }
 
     .info-box {
       background-color: rgba(0, 0, 0, 0.7);
       border-radius: 15px;
-      padding: 20px;
-      margin-top: 40px;
-      box-shadow: 0px 0px 20px black;
+      padding: 30px;
+      max-width: 700px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
     }
 
     .btn-custom {
@@ -41,19 +46,21 @@
       font-weight: bold;
       border-radius: 10px;
     }
+
+    hr {
+      border-color: white;
+    }
   </style>
 </head>
-<body class="d-flex h-100 text-white">
-  <div class="container d-flex flex-column justify-content-center align-items-center text-center">
-    <div class="info-box">
-      <h1>Copa del Mundo</h1>
-      <h2>Programación Web I</h2>
-      <p><strong>185668 - Braulio Martinez Salgado</strong></p>
-      <p><em>14 de Febrero de 2025</em></p>
-      <hr style="border-color: white;">
-      <p>La Copa Mundial de la FIFA es el torneo más prestigioso del fútbol internacional. Únete a nosotros para revivir los mejores momentos, los goles históricos y las leyendas que marcaron época.</p>
-      <a href="#" class="btn btn-custom mt-3">Ver más...</a>
-    </div>
+<body>
+  <div class="info-box">
+    <h1>Copa del Mundo</h1>
+    <h2>Programación Web I</h2>
+    <p><em>14 de Febrero de 2025</em></p>
+    <hr>
+    <p>La Copa Mundial de la FIFA es el torneo más prestigioso del fútbol internacional. Únete a nosotros para revivir los mejores momentos, los goles históricos y las leyendas que marcaron época.</p>
+    <a href="proyecto/contacto.html" class="btn btn-custom mt-3">Ir a Contacto</a>
   </div>
 </body>
 </html>
+ 
