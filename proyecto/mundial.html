@@ -26,6 +26,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding-top: 80px;
     }
 
     h1, h2 {
@@ -50,9 +51,27 @@
     hr {
       border-color: white;
     }
+
+    .top-buttons {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .top-buttons a {
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Botones de navegación -->
+  <div class="top-buttons">
+    <a href="index.html" class="btn btn-light">Inicio</a>
+    <a href="referencias.html" class="btn btn-secondary">Referencias</a>
+  </div>
+
   <div class="info-box">
     <h1>Copa del Mundo</h1>
     <h2>Programación Web I</h2>
@@ -61,6 +80,6 @@
     <p>La Copa Mundial de la FIFA es el torneo más prestigioso del fútbol internacional. Únete a nosotros para revivir los mejores momentos, los goles históricos y las leyendas que marcaron época.</p>
     <a href="contacto.html" class="btn btn-custom mt-3">Ir a Contacto</a>
   </div>
+
 </body>
 </html>
- 
