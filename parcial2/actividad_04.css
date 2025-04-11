@@ -1,44 +1,46 @@
-h1{
-    border: 2px solid tomato;
-    font-family: "Handjet", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-        "ELGR" 1,
-        "ELSH" 2;
-}
-
-ul{
-    border-width: 5px;
-    border-style: dotted;
-    border-color: dodgerblue;
-}
-
-li{
-    border-width: 2.5px;
-    border-style: dashed;
-    border-color: lightcoral;
-}
-
-p{
-    border-radius: 10px;
-    border-width: 2.5px;
-    border-style: solid;
-    border-color: darkmagenta;
-}
-
-body{
-    background-color: gray;
-    background-size: 560px;
-    background-image: url("vk4slai8vcf81.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: "Doto", sans-serif;
+h1 {
+    border: 2px solid #FF6347;
+    font-family: "Arial", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    font-variation-settings:
-        "ROND" 0;
+    font-variation-settings: "wght" 900;
+    color: #8A2BE2;
+}
+ 
+ul {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #32CD32;
+}
+ 
+li {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #FF1493;
+    color: #DC143C;
+}
+ 
+p {
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: double;
+    border-color: #FFD700;
+    background-color: #F0E68C;
+    color: #2F4F4F;
+}
+ 
+body {
+    background-color: #FAEBD7;
+    background-size: cover;
+    background-image: url("new-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Tahoma", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wght" 600;
+    color: #4B0082;
 }
