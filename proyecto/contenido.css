@@ -3,6 +3,7 @@ body {
   color: white;
   font-family: 'Encode Sans Condensed', sans-serif;
   padding-top: 80px;
+  margin: 0;
 }
 
 .top-buttons {
@@ -14,6 +15,14 @@ body {
 
 .top-buttons a {
   margin-right: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-buttons a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
 .section {
@@ -22,20 +31,22 @@ body {
 
 .img-fluid {
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 .img-fluid:hover {
   transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
 }
 
 .social-icons img {
   width: 40px;
   height: 40px;
   margin: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .social-icons img:hover {
   transform: scale(1.1);
+  filter: brightness(1.2);
 }
