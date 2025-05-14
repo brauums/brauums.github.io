@@ -4,39 +4,47 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Russo One', sans-serif;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://images.unsplash.com/photo-1609334762883-29d75f0133e1') no-repeat center center fixed;
+  background: url('https://cdn.pixabay.com/photo/2021/11/24/00/01/soccer-6819475_1280.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
-  animation: fondoZoom 15s infinite alternate ease-in-out;
+  animation: zoom 10s ease-in-out infinite alternate;
 }
 
-@keyframes fondoZoom {
+@keyframes zoom {
   from {
-    background-size: 100% 100%;
+    background-size: 100%;
   }
   to {
-    background-size: 110% 110%;
+    background-size: 110%;
   }
 }
 
-.login-box {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 25px rgba(0,255,0,0.3);
-  animation: entradaFlotante 2s ease-out;
+.container {
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes entradaFlotante {
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.5);
+  text-align: center;
+  color: #fff;
+  animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
   from {
-    transform: translateY(-50px);
+    transform: translateY(-100px);
     opacity: 0;
   }
   to {
@@ -45,45 +53,53 @@ body {
   }
 }
 
-.login-box h1 {
-  color: #ffffff;
-  font-size: 32px;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px #000;
+.login-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #00ff99;
+}
+
+.login-card p {
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 input[type="email"] {
-  padding: 12px;
-  width: 80%;
+  padding: 15px;
+  width: 100%;
   border: none;
   border-radius: 8px;
   margin-bottom: 20px;
   font-size: 16px;
-  background-color: #f8f9fa;
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-  transition: 0.3s ease;
-}
-
-input[type="email"]:focus {
-  outline: none;
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #28a745;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
 }
 
 button {
-  background-color: #28a745;
-  color: white;
-  padding: 12px 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #28a745, #218838);
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,255,0,0.4);
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+button i {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+button:hover i {
+  transform: translateX(5px);
 }
 
 button:hover {
-  background-color: #218838;
-  transform: scale(1.1);
-  box-shadow: 0 6px 18px rgba(0,255,0,0.6);
+  box-shadow: 0 0 20px #00ff99;
+  transform: scale(1.05);
 }
