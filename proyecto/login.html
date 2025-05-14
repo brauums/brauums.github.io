@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Mundial</title>
+  <title>Login Futbolero</title>
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <div class="contenedor-login">
-    <h1>⚽ Bienvenido al Mundial ⚽</h1>
+  <div class="login-box">
+    <h1>⚽ Acceso al Mundial ⚽</h1>
     <form onsubmit="return irAlMundial()">
-      <input type="email" id="correo" placeholder="Correo electrónico" required>
-      <button type="submit">Entrar al Mundial</button>
+      <input type="email" id="correo" placeholder="Ingresa tu correo" required>
+      <button type="submit">¡Entrar al Juego!</button>
     </form>
   </div>
 
@@ -21,7 +21,7 @@
       if (correo) {
         window.location.href = "proyecto/mundial.html";
       }
-      return false; // Evita que el formulario se envíe realmente
+      return false;
     }
   </script>
 </body>
