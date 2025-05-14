@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Futbolero</title>
-  <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Mundial Pro</title>
+  <link rel="stylesheet" href="estilo.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="login-box">
-    <h1>⚽ Acceso al Mundial ⚽</h1>
-    <form onsubmit="return irAlMundial()">
-      <input type="email" id="correo" placeholder="Ingresa tu correo" required>
-      <button type="submit">¡Entrar al Juego!</button>
-    </form>
+  <div class="container">
+    <div class="login-card">
+      <h2><i class="fas fa-futbol"></i> Accede al Mundial</h2>
+      <p>Ingresa tu correo para entrar al juego</p>
+      <form onsubmit="return irAlMundial()">
+        <input type="email" id="correo" placeholder="Correo electrónico" required />
+        <button type="submit">
+          <span>Entrar al estadio</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
   </div>
 
   <script>
     function irAlMundial() {
-      const correo = document.getElementById('correo').value;
+      const correo = document.getElementById("correo").value;
       if (correo) {
         window.location.href = "proyecto/mundial.html";
       }
