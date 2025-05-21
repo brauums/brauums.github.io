@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evolución del reglamento FIFA">
+  <meta name="author" content="FIFA Fan Web">
+  <title>Evolución del reglamento</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="carousel.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #1f4037, #99f2c8);
+      color: #000;
+      font-family: 'Encode Sans Condensed', sans-serif;
+      padding-top: 80px;
+      margin: 0;
+    }
+    .section {
+      padding: 50px 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .img-fluid {
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+    .img-fluid:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+    .custom-table {
+      background-color: #f0f0f0;
+      color: #000;
+    }
+    iframe {
+      border: 4px solid #000;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra superior -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FIFA Mundial</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Historia FIFA</a>
+              <ul class="dropdown-menu" style="border-top: 5px solid white;">
+                <li><a class="dropdown-item" href="origenes.html">Orígenes</a></li>
+                <li><a class="dropdown-item" href="copas.html">Copas del Mundo</a></li>
+                <li><a class="dropdown-item" href="reglamento.html">Evolución del reglamento</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Grandes Jugadores</a>
+              <ul class="dropdown-menu" style="border-top: 5px solid white;">
+                <li><a class="dropdown-item" href="#">Pelé</a></li>
+                <li><a class="dropdown-item" href="#">Maradona</a></li>
+                <li><a class="dropdown-item" href="#">Messi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Estadios</a>
+              <ul class="dropdown-menu" style="border-top: 5px solid white;">
+                <li><a class="dropdown-item" href="#">Estadio Azteca</a></li>
+                <li><a class="dropdown-item" href="#">Maracaná</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="redes.html">Redes sociales</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="section container">
+    <h1>Evolución del reglamento del fútbol</h1>
+    <h2>Reglas que marcaron la historia del juego</h2>
+    <p>Desde su formalización en 1863 por la Football Association en Inglaterra, el reglamento del fútbol ha experimentado múltiples cambios para adaptarse a los tiempos, mejorar el espectáculo y garantizar la justicia deportiva.</p>
+
+    <h3>Momentos clave</h3>
+    <ul>
+      <li>1863: Se prohíbe el uso de las manos y se crea la Football Association.</li>
+      <li>1871: Se introduce la figura del portero.</li>
+      <li>1891: Aparece el penalti como sanción directa.</li>
+      <li>1925: Se modifica la regla del fuera de juego.</li>
+      <li>1970: Primer uso de tarjetas amarillas y rojas en un Mundial.</li>
+      <li>2012: Se aprueba el uso de tecnología de línea de gol.</li>
+      <li>2018: Debut del VAR en la Copa del Mundo de Rusia.</li>
+    </ul>
+
+    <img src="reglamento_antiguo.jpg" alt="Antiguo reglamento de fútbol" class="img-fluid my-4">
+
+    <table class="table custom-table">
+      <thead>
+        <tr><th>Año</th><th>Regla añadida o modificada</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1863</td><td>Fundación del reglamento moderno</td></tr>
+        <tr><td>1871</td><td>Portero como figura separada</td></tr>
+        <tr><td>1992</td><td>Regla del pase al portero con el pie</td></tr>
+        <tr><td>2012</td><td>Uso de tecnología de línea de gol</td></tr>
+        <tr><td>2018</td><td>Introducción oficial del VAR</td></tr>
+      </tbody>
+    </table>
+
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Wh6f7vbsb5s" title="Evolución del reglamento FIFA" allowfullscreen class="my-4"></iframe>
+  </main>
+
+  <footer class="container mt-5">
+    <hr>
+    <p class="float-end"><a href="#">Volver arriba</a></p>
+    <p>&copy; 2025 FIFA Fan Web &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
