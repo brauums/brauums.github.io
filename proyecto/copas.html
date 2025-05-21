@@ -1,141 +1,110 @@
-<!doctype html>
-<html lang="es" data-bs-theme="auto">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Orígenes de la FIFA">
-  <meta name="author" content="FIFA Fan Web">
-  <title>Orígenes de la FIFA</title>
-  <link rel="icon" type="image/x-icon" href="icon.png">
+  <meta charset="UTF-8">
+  <title>Copas del Mundo - FIFA</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="carousel.css">
   <style>
     body {
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1a1f36, #2c3e50);
       color: white;
-      font-family: 'Encode Sans Condensed', sans-serif;
-      padding-top: 80px;
-      margin: 0;
+      padding: 20px;
     }
-    .section {
-      padding: 50px 20px;
-      animation: fadeIn 1.5s ease-in;
+
+    h1, h2, h3 {
+      text-align: center;
+      text-shadow: 2px 2px 4px #000;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+
+    .cup-img {
+      max-width: 100%;
+      height: auto;
+      border: 3px solid white;
+      border-radius: 15px;
+      box-shadow: 0 0 10px white;
+      transition: transform 0.3s ease-in-out;
     }
-    .img-fluid {
-      border-radius: 10px;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    }
-    .img-fluid:hover {
+
+    .cup-img:hover {
       transform: scale(1.05);
-      box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
     }
-    .custom-table {
-      background-color: #1c1c1c;
+
+    .iframe-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    table {
       color: white;
-    }
-    iframe {
-      border: 4px solid white;
-      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <!-- Barra superior -->
-  <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">FIFA Mundial</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Historia FIFA</a>
-              <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                <li><a class="dropdown-item" href="origenes.html">Orígenes</a></li>
-                <li><a class="dropdown-item" href="#">Copas del Mundo</a></li>
-                <li><a class="dropdown-item" href="#">Evolución del reglamento</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Grandes Jugadores</a>
-              <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                <li><a class="dropdown-item" href="#">Pelé</a></li>
-                <li><a class="dropdown-item" href="#">Maradona</a></li>
-                <li><a class="dropdown-item" href="#">Messi</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Estadios</a>
-              <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                <li><a class="dropdown-item" href="#">Estadio Azteca</a></li>
-                <li><a class="dropdown-item" href="#">Maracaná</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="redes.html">Redes sociales</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Contenido principal -->
-  <main class="section container">
-    <h1>Orígenes de la FIFA</h1>
-    <h2>Fundación y propósito</h2>
-    <p>La Federación Internacional de Fútbol Asociación (FIFA) fue fundada el 21 de mayo de 1904 en París, Francia. Surgió de la necesidad de organizar y unificar las reglas del fútbol entre las distintas naciones. Los países fundadores fueron Francia, Bélgica, Dinamarca, Países Bajos, España, Suecia y Suiza.</p>
+  <h1>🏆 Copas del Mundo</h1>
+  <h2>Historia del Trofeo</h2>
+  <p>Desde 1930, la Copa del Mundo de la FIFA se ha convertido en el evento más prestigioso del fútbol. A lo largo de las décadas, el diseño del trofeo ha evolucionado, simbolizando la grandeza del deporte.</p>
 
-    <h3>Primeros años de historia</h3>
-    <p>Desde sus inicios, la FIFA buscó promover la cooperación internacional en el fútbol. En 1930 organizó la primera Copa Mundial en Uruguay, lo que consolidó su rol como ente rector del fútbol a nivel mundial.</p>
+  <h3>Modelos de la Copa</h3>
+  <ul>
+    <li><strong>Copa Jules Rimet (1930–1970)</strong> – Entregada por primera vez en Uruguay.</li>
+    <li><strong>Trofeo actual (1974–presente)</strong> – Hecho de oro macizo con dos figuras humanas levantando el mundo.</li>
+  </ul>
 
-    <ul>
-      <li>Fundación: 21 de mayo de 1904</li>
-      <li>Sede inicial: París, Francia</li>
-      <li>Primer presidente: Robert Guérin</li>
-    </ul>
+  <div class="row my-4">
+    <div class="col-md-6">
+      <img src="jules-rimet.jpg" alt="Copa Jules Rimet" class="cup-img">
+      <p class="text-center">Copa Jules Rimet</p>
+    </div>
+    <div class="col-md-6">
+      <img src="trofeo-actual.jpg" alt="Copa del Mundo Actual" class="cup-img">
+      <p class="text-center">Trofeo FIFA actual</p>
+    </div>
+  </div>
 
-    <img src="fundacion_fifa.jpg" alt="Firma del acta de fundación de la FIFA en 1904" class="img-fluid my-4">
+  <h2>Copas del Mundo más recientes</h2>
+  <table class="table table-dark table-striped table-bordered text-center">
+    <thead>
+      <tr>
+        <th>Año</th>
+        <th>País anfitrión</th>
+        <th>Campeón</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2014</td>
+        <td>Brasil</td>
+        <td>Alemania</td>
+      </tr>
+      <tr>
+        <td>2018</td>
+        <td>Rusia</td>
+        <td>Francia</td>
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>Catar</td>
+        <td>Argentina</td>
+      </tr>
+    </tbody>
+  </table>
 
-    <table class="table custom-table">
-      <thead>
-        <tr>
-          <th>Año</th>
-          <th>Evento Clave</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1904</td>
-          <td>Fundación de la FIFA</td>
-        </tr>
-        <tr>
-          <td>1930</td>
-          <td>Primera Copa Mundial</td>
-        </tr>
-        <tr>
-          <td>1954</td>
-          <td>FIFA se traslada a Zúrich</td>
-        </tr>
-      </tbody>
-    </table>
+  <h2>Más información</h2>
+  <p>Consulta los siguientes enlaces para explorar más sobre la historia de la Copa:</p>
+  <ul>
+    <li><a href="https://www.fifa.com/tournaments/mens/worldcup" target="_blank">Sitio oficial de la FIFA</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/Copa_Mundial_de_F%C3%BAtbol" target="_blank">Wikipedia - Copa Mundial</a></li>
+    <li><a href="https://www.fifa.com/fifaplus/es" target="_blank">FIFA Plus</a></li>
+    <li><a href="https://www.youtube.com/FIFA" target="_blank">Canal oficial de FIFA</a></li>
+    <li><a href="https://twitter.com/FIFAWorldCup" target="_blank">Twitter - FIFA World Cup</a></li>
+  </ul>
 
-    <p>A lo largo de más de un siglo, la FIFA ha enfrentado múltiples desafíos, pero ha sido pieza clave en el desarrollo global del fútbol.</p>
+  <div class="iframe-container">
+    <h3>Video destacado</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KxRLyCwHcvM" title="Final Qatar 2022" frameborder="0" allowfullscreen></iframe>
+  </div>
 
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/nJQ7-8lQ4Jw" title="Historia de la FIFA" allowfullscreen class="my-4"></iframe>
-  </main>
-
-  <footer class="container mt-5">
-    <hr>
-    <p class="float-end"><a href="#">Volver arriba</a></p>
-    <p>&copy; 2025 FIFA Fan Web &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
