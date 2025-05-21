@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pelé, el Rey del Fútbol">
+  <meta name="author" content="FIFA Fan Web">
+  <title>Pelé</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="carousel.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #0f2027, #2c5364);
+      color: white;
+      font-family: 'Encode Sans Condensed', sans-serif;
+      padding-top: 80px;
+      margin: 0;
+    }
+    .section {
+      padding: 50px 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .img-fluid {
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+    .img-fluid:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+    }
+    .custom-table {
+      background-color: #1c1c1c;
+      color: white;
+    }
+    iframe {
+      border: 4px solid white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra superior -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FIFA Mundial</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Historia FIFA</a>
+              <ul class="dropdown-menu" style="border-top: 5px solid white;">
+                <li><a class="dropdown-item" href="origenes.html">Orígenes</a></li>
+                <li><a class="dropdown-item" href="copas.html">Copas del Mundo</a></li>
+                <li><a class="dropdown-item" href="reglamento.html">Evolución del reglamento</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Grandes Jugadores</a>
+              <ul class="dropdown-menu" style="border-top: 5px solid white;">
+                <li><a class="dropdown-item" href="jugadores.html">Resumen General</a></li>
+                <li><a class="dropdown-item" href="pele.html">Pelé</a></li>
+                <li><a class="dropdown-item" href="maradona.html">Maradona</a></li>
+                <li><a class="dropdown-item" href="messi.html">Messi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Estadios</a>
+              <ul class="dropdown-menu" style="border-top: 5px solid white;">
+                <li><a class="dropdown-item" href="#">Estadio Azteca</a></li>
+                <li><a class="dropdown-item" href="#">Maracaná</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="redes.html">Redes sociales</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="section container">
+    <h1>Pelé: El Rey del Fútbol</h1>
+    <p>Edson Arantes do Nascimento, conocido mundialmente como Pelé, es una de las máximas leyendas del fútbol. Nacido en Brasil en 1940, su talento, visión y carisma lo convirtieron en un ícono global.</p>
+
+    <h3>Logros principales</h3>
+    <ul>
+      <li>Campeón del Mundo en 1958, 1962 y 1970</li>
+      <li>Más de 1,200 goles oficiales y amistosos</li>
+      <li>Considerado el mejor jugador del siglo XX por la FIFA</li>
+      <li>Único futbolista con 3 Copas del Mundo ganadas</li>
+    </ul>
+
+    <img src="pele_rey.jpg" alt="Pelé celebrando un gol con Brasil" class="img-fluid my-4">
+
+    <table class="table custom-table">
+      <thead>
+        <tr><th>Año</th><th>Evento</th><th>Resultado</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1958</td><td>Mundial en Suecia</td><td>Campeón</td></tr>
+        <tr><td>1962</td><td>Mundial en Chile</td><td>Campeón</td></tr>
+        <tr><td>1970</td><td>Mundial en México</td><td>Campeón</td></tr>
+      </tbody>
+    </table>
+
+    <p>Pelé también fue embajador del fútbol y defensor de la paz, reconocido con premios y homenajes en todo el mundo. Su legado perdura más allá del deporte.</p>
+
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/n2DHoP0U1NA" title="Tributo a Pelé" allowfullscreen class="my-4"></iframe>
+  </main>
+
+  <footer class="container mt-5">
+    <hr>
+    <p class="float-end"><a href="#">Volver arriba</a></p>
+    <p>&copy; 2025 FIFA Fan Web &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
