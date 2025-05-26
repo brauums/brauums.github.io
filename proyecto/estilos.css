@@ -25,17 +25,23 @@ body {
 
 h1, h2, h3 {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  animation: slideDown 1s ease-in-out;
 }
 
-.img-fluid {
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.img-fluid, .cup-img {
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-.img-fluid:hover {
+.img-fluid:hover, .cup-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px #00ffff;
 }
 
 .custom-table {
@@ -69,6 +75,10 @@ a:hover {
   text-decoration: underline;
 }
 
+ul li {
+  margin-bottom: 10px;
+}
+
 .navbar {
   box-shadow: 0 4px 6px rgba(0,0,0,0.5);
 }
@@ -81,4 +91,8 @@ a:hover {
 .dropdown-item:hover {
   background-color: #1c1c1c;
   color: #00ffff;
+}
+
+.table-bordered {
+  border: 1px solid rgba(255,255,255,0.2);
 }
