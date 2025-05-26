@@ -1,65 +1,27 @@
 <!doctype html>
 <html lang="es" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Página oficial sobre FIFA y el mundo del fútbol">
-    <meta name="author" content="FIFA Fan Web">
-    <meta name="generator" content="Hugo 0.122.0">
-    <link rel="icon" type="image/x-icon" href="icon.png">
-    <title>FIFA Mundial</title>
-    <link rel="canonical" href="#">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      .shadow:hover {
-        background: rgba(0, 0, 0, 0.75);
-        border-radius: 20px;
-      }
-    </style>
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body>
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">FIFA Mundial</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Historia FIFA</a>
-            <ul class="dropdown-menu" style="border-top: 5px solid white;">
-              <li><a class="dropdown-item" href="origenes.html">Orígenes</a></li>
-              <li><a class="dropdown-item" href="copas.html">Copas del Mundo</a></li>
-             <li><a class="dropdown-item" href="reglamento.html">Evolución del reglamento</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Grandes Jugadores</a>
-            <ul class="dropdown-menu" style="border-top: 5px solid white;">
-              <li><a class="dropdown-item" href="#">Pelé</a></li>
-              <li><a class="dropdown-item" href="#">Maradona</a></li>
-              <li><a class="dropdown-item" href="#">Messi</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Estadios</a>
-            <ul class="dropdown-menu" style="border-top: 5px solid white;">
-              <li><a class="dropdown-item" href="#">Estadio Azteca</a></li>
-              <li><a class="dropdown-item" href="#">Maracaná</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="redes.html">Redes sociales</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-<main>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página oficial sobre FIFA y el mundo del fútbol">
+  <meta name="author" content="FIFA Fan Web">
+  <title>FIFA Mundial</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="navbar-container"></header>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+  <!-- Carrusel principal -->
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators shadow">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
@@ -98,17 +60,41 @@
       <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
-  <div class="container text-center mt-5">
-    <p class="lead">Explora más sobre los jugadores, partidos y estadios emblemáticos.</p>
-    <a class="btn btn-primary btn-lg" href="contenid2_futbol.html">Ir al contenido</a>
-  </div>
+
+  <!-- Introducción -->
+  <main class="section container text-center">
+    <h1>Bienvenidos a FIFA Mundial</h1>
+    <p class="lead">Explora la historia, los estadios legendarios, los jugadores más grandes y las competiciones que hicieron del fútbol el deporte más amado del planeta.</p>
+
+    <div class="row my-5">
+      <div class="col-md-4">
+        <img src="inicio_historia.jpg" alt="Historia FIFA" class="img-fluid mb-3">
+        <h3>Historia</h3>
+        <p>Conoce los orígenes y la evolución del reglamento del fútbol internacional.</p>
+        <a href="origenes.html" class="btn btn-outline-light">Explorar</a>
+      </div>
+      <div class="col-md-4">
+        <img src="inicio_jugadores.jpg" alt="Grandes jugadores" class="img-fluid mb-3">
+        <h3>Jugadores Legendarios</h3>
+        <p>Revive las hazañas de Pelé, Maradona, Messi y otros grandes del balón.</p>
+        <a href="jugadores.html" class="btn btn-outline-light">Ver más</a>
+      </div>
+      <div class="col-md-4">
+        <img src="inicio_estadios.jpg" alt="Estadios famosos" class="img-fluid mb-3">
+        <h3>Estadios Icónicos</h3>
+        <p>Recorre los escenarios donde la historia del fútbol se escribió con goles y pasión.</p>
+        <a href="estadios.html" class="btn btn-outline-light">Conócelos</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
   <footer class="container mt-5">
     <hr>
     <p class="float-end"><a href="#">Volver arriba</a></p>
     <p>&copy; 2025 FIFA Fan Web &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
   </footer>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
