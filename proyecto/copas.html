@@ -10,11 +10,24 @@
       background: linear-gradient(to bottom, #1a1f36, #2c3e50);
       color: white;
       padding: 20px;
+      animation: fadeInBody 1s ease-in-out;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h1, h2, h3 {
       text-align: center;
       text-shadow: 2px 2px 4px #000;
+      margin-top: 30px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .cup-img {
@@ -23,20 +36,47 @@
       border: 3px solid white;
       border-radius: 15px;
       box-shadow: 0 0 10px white;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     }
 
     .cup-img:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffff;
     }
 
     .iframe-container {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
-    table {
-      color: white;
+    .table {
+      margin-top: 20px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    a {
+      color: #00ffff;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    p, ul {
+      animation: fadeInText 1.2s ease-in;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
